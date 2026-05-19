@@ -10,7 +10,7 @@
 
   <meta property="og:title" content="Cross Your Hart Counselling" />
   <meta property="og:description" content="Person-centred counselling with Hannah Hart, BACP." />
-  <meta property="og:image" content="logo-stacked.png" />
+  <meta property="og:image" content="hannah.png" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -37,12 +37,24 @@
         <a href="#top" class="logo-link" aria-label="Cross Your Hart Counselling &mdash; back to top">
           <img src="logo-horizontal.png" alt="Cross Your Hart Counselling" />
         </a>
-        <nav class="primary-nav" aria-label="Primary">
+        <button type="button" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+          <span class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <span class="sep" aria-hidden="true">&middot;</span>
           <a href="#approach">Approach</a>
           <span class="sep" aria-hidden="true">&middot;</span>
           <a href="#help">What I help with</a>
           <span class="sep" aria-hidden="true">&middot;</span>
           <a href="#sessions">Sessions</a>
+          <span class="sep" aria-hidden="true">&middot;</span>
+          <a href="#fees">Fees</a>
           <span class="sep" aria-hidden="true">&middot;</span>
           <a href="#faq">FAQ</a>
           <span class="sep" aria-hidden="true">&middot;</span>
@@ -56,138 +68,228 @@
 
     <section class="hero" id="top">
       <div class="container">
-        <h1>Hi, I'm Hannah.</h1>
-        <p class="intro">I'm a BACP-registered counsellor. I offer a quiet, non-judgmental space to talk through whatever's on your mind &mdash; at a pace that feels right for you.</p>
-        <p class="intro">If you've ended up here, you might be having a hard time. That's okay. There's no pressure on this page.</p>
-        <a href="#contact" class="cta">Get in touch</a>
+        <div class="hero-grid">
+          <div class="hero-text reveal">
+            <div class="kicker">
+              <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+              <span>BACP-registered counsellor</span>
+            </div>
+            <h1>Hi, I&rsquo;m Hannah.</h1>
+            <p class="intro">A quiet, non-judgmental space to talk through whatever&rsquo;s on your mind &mdash; at a pace that feels right for you.</p>
+            <p class="intro">If you&rsquo;ve ended up here, you might be having a hard time. That&rsquo;s okay. There&rsquo;s no pressure on this page.</p>
+            <a href="#contact" class="cta">Get in touch</a>
+          </div>
+          <figure class="hero-portrait reveal" aria-label="Hannah Hart">
+            <div class="portrait-frame">
+              <img src="hannah.png" alt="Portrait of Hannah Hart, counsellor" />
+            </div>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <section class="approach alt" id="approach">
-      <div class="mark" aria-hidden="true"><svg><use href="#heart-mark"/></svg></div>
+    <section class="about alt" id="about">
       <div class="container">
-        <h2>How I work</h2>
-        <p class="lede">I'm not here to fix you. You're not broken.</p>
-        <p>I work in a person-centred way. My job is to listen, properly. To be on your side. And to hold a space where it's safe to say the things you might not have said out loud before.</p>
-        <p>Some weeks we'll talk a lot. Some weeks we won't say much at all. Both are okay.</p>
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>01</em> &mdash; About</span>
+        </div>
+        <h2 class="reveal">A little about me.</h2>
+        <p class="lede reveal">I trained as a counsellor because the world isn&rsquo;t always kind, and most of us need somewhere quiet to put down what we&rsquo;re carrying.</p>
+        <p class="reveal">For several years I&rsquo;ve sat alongside people through some of the hardest chapters of their lives &mdash; abuse, grief, identity, the slow grind of overwhelm &mdash; and I&rsquo;ve watched what changes when someone is properly heard.</p>
+        <p class="reveal">I&rsquo;m BACP-registered and work in a person-centred way. Which is a quiet way of saying: I won&rsquo;t try to fix you, I won&rsquo;t pretend to have answers I don&rsquo;t, and we&rsquo;ll work at your pace &mdash; together.</p>
       </div>
     </section>
 
-    <section class="help" id="help">
-      <div class="mark" aria-hidden="true"><svg><use href="#heart-mark"/></svg></div>
+    <section class="approach" id="approach">
       <div class="container">
-        <h2>What I can help with</h2>
-        <p>People come to me for all sorts of reasons. The areas I've spent the most time with are:</p>
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>02</em> &mdash; How I work</span>
+        </div>
+        <h2 class="reveal">I&rsquo;m not here to fix you.</h2>
+        <p class="lede reveal">You&rsquo;re not broken.</p>
+        <p class="reveal">My job is to listen, properly. To be on your side. And to hold a space where it&rsquo;s safe to say the things you might not have said out loud before.</p>
+        <p class="reveal">Some weeks we&rsquo;ll talk a lot. Some weeks we won&rsquo;t say much at all. Both are okay.</p>
+      </div>
+    </section>
+
+    <section class="help alt" id="help">
+      <div class="container">
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>03</em> &mdash; What I help with</span>
+        </div>
+        <h2 class="reveal">People come to me for all sorts of reasons.</h2>
+        <p class="reveal">The areas I&rsquo;ve spent the most time with are these.</p>
 
         <div class="help-grid">
-          <div class="help-card">
+          <div class="help-card reveal">
             <h3>Domestic abuse</h3>
             <p>Recent or from a long time ago &mdash; controlling, coercive, or violent relationships.</p>
           </div>
-          <div class="help-card">
+          <div class="help-card reveal">
             <h3>Sexual abuse and assault</h3>
-            <p>A gentle, confidential space to process what's happened, on your terms.</p>
+            <p>A gentle, confidential space to process what&rsquo;s happened, on your terms.</p>
           </div>
-          <div class="help-card">
-            <h3>Being autistic</h3>
-            <p>Or wondering if you might be. Identity, relationships, work, day-to-day life.</p>
+          <div class="help-card reveal">
+            <h3>Autism</h3>
+            <p>Or wondering if you might be autistic. Identity, relationships, work, day-to-day life.</p>
           </div>
-          <div class="help-card">
+          <div class="help-card reveal">
             <h3>ADHD</h3>
-            <p>Making sense of a diagnosis, managing overwhelm, the bits that don't get talked about.</p>
+            <p>Making sense of a diagnosis, managing overwhelm, the bits that don&rsquo;t get talked about.</p>
+          </div>
+          <div class="help-card reveal">
+            <h3>Stress &amp; anxiety</h3>
+            <p>The kind that&rsquo;s been there a while, or the kind that&rsquo;s recently arrived. Burnout, overwhelm, the body that won&rsquo;t switch off.</p>
+          </div>
+          <div class="help-card reveal">
+            <h3>Grief</h3>
+            <p>Loss of someone close, or the quieter griefs &mdash; endings, illness, the life that didn&rsquo;t quite happen.</p>
           </div>
         </div>
 
-        <p class="help-note">If something's weighing on you and you're not sure it "counts" &mdash; please get in touch anyway. It probably does.</p>
+        <p class="help-note reveal">If something&rsquo;s weighing on you and you&rsquo;re not sure it &ldquo;counts&rdquo; &mdash; please get in touch anyway. It probably does.</p>
       </div>
     </section>
 
-    <section class="sessions alt" id="sessions">
-      <div class="mark" aria-hidden="true"><svg><use href="#heart-mark"/></svg></div>
+    <section class="sessions" id="sessions">
       <div class="container">
-        <h2>How sessions work</h2>
-        <p>Sessions are <strong>50 minutes</strong>. We usually meet weekly, at the same time each week &mdash; that consistency tends to help.</p>
-        <p>I work [online via Zoom / in person at LOCATION / both]. We can figure out what works best for you.</p>
-        <p>Before we book anything, we'll have a short phone call so you can get a feel for me and decide if it feels like a fit. No commitment.</p>
-        <p>What you share with me stays between us, with a few specific exceptions that I'll be upfront about before we start.</p>
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>04</em> &mdash; How sessions work</span>
+        </div>
+        <h2 class="reveal">The shape of our time together.</h2>
+
+        <dl class="session-details reveal">
+          <div>
+            <dt>Length</dt>
+            <dd>50 minutes, usually weekly at the same time. That consistency tends to help.</dd>
+          </div>
+          <div>
+            <dt>Where</dt>
+            <dd>Online via Zoom, by telephone, or in person at Resolven. Whichever works best for you.</dd>
+          </div>
+          <div>
+            <dt>First step</dt>
+            <dd>A short phone call so you can get a feel for me and decide if it feels like a fit. No commitment.</dd>
+          </div>
+          <div>
+            <dt>Confidentiality</dt>
+            <dd>What you share with me stays between us, with a few specific exceptions I&rsquo;ll be upfront about before we start.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="fees alt" id="fees">
+      <div class="container">
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>05</em> &mdash; Fees</span>
+        </div>
+        <h2 class="reveal">Plain about cost.</h2>
+
+        <dl class="fees-list reveal">
+          <div>
+            <dt>Standard</dt>
+            <dd><span class="price">&pound;50</span> per session.</dd>
+          </div>
+          <div>
+            <dt>Students</dt>
+            <dd><span class="price">&pound;30</span> per session &mdash; online and telephone only.</dd>
+          </div>
+          <div>
+            <dt>Concessions</dt>
+            <dd><span class="price">&pound;30</span> per session. <a href="#contact">Email for further details</a>.</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
     <section class="faq" id="faq">
-      <div class="mark" aria-hidden="true"><svg><use href="#heart-mark"/></svg></div>
       <div class="container">
-        <h2>A few honest questions</h2>
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>06</em> &mdash; A few honest questions</span>
+        </div>
+        <h2 class="reveal">What people often wonder.</h2>
 
-        <details class="faq">
-          <summary>I don't know where to start. Is that a problem?</summary>
-          <div class="answer">
-            <p>No. Most people don't. We'll find our way in together &mdash; you don't need to come with a plan.</p>
-          </div>
-        </details>
+        <div class="reveal">
+          <details class="faq">
+            <summary>I don&rsquo;t know where to start. Is that a problem?</summary>
+            <div class="answer">
+              <p>No. Most people don&rsquo;t. We&rsquo;ll find our way in together &mdash; you don&rsquo;t need to come with a plan.</p>
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>What if I cry, get angry, or can't speak?</summary>
-          <div class="answer">
-            <p>All of those are welcome. Counselling makes room for the bits of you that don't usually get to come out.</p>
-          </div>
-        </details>
+          <details class="faq">
+            <summary>What if I cry, get angry, or can&rsquo;t speak?</summary>
+            <div class="answer">
+              <p>All of those are welcome. Counselling makes room for the bits of you that don&rsquo;t usually get to come out.</p>
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>Is what I share confidential?</summary>
-          <div class="answer">
-            <p>Yes &mdash; with very few exceptions, like if there's a serious risk to you or someone else. I'll explain these fully before we start.</p>
-          </div>
-        </details>
+          <details class="faq">
+            <summary>Is what I share confidential?</summary>
+            <div class="answer">
+              <p>Yes &mdash; with very few exceptions, like if there&rsquo;s a serious risk to you or someone else. I&rsquo;ll explain these fully before we start.</p>
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>How long do people usually come for?</summary>
-          <div class="answer">
-            <p>It varies. Some people come for a few weeks; others for many months. There's no right answer, and you can stop whenever feels right.</p>
-          </div>
-        </details>
+          <details class="faq">
+            <summary>How long do people usually come for?</summary>
+            <div class="answer">
+              <p>It varies. Some people come for a few weeks; others for many months. There&rsquo;s no right answer, and you can stop whenever feels right.</p>
+            </div>
+          </details>
 
-        <details class="faq">
-          <summary>What if it doesn't feel like a fit?</summary>
-          <div class="answer">
-            <p>Then it doesn't, and that's okay. The first call is exactly for working that out. If I'm not the right counsellor for you, I'll happily suggest someone who might be.</p>
-          </div>
-        </details>
+          <details class="faq">
+            <summary>What if it doesn&rsquo;t feel like a fit?</summary>
+            <div class="answer">
+              <p>Then it doesn&rsquo;t, and that&rsquo;s okay. The first call is exactly for working that out. If I&rsquo;m not the right counsellor for you, I&rsquo;ll happily suggest someone who might be.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
     <section class="testimonials alt">
-      <div class="mark" aria-hidden="true"><svg><use href="#heart-mark"/></svg></div>
       <div class="container">
-        <h2>In clients' own words</h2>
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>07</em> &mdash; In clients&rsquo; own words</span>
+        </div>
 
-        <p class="lede">The difference between week 1 and week 8 is day and night. Hannah has helped me see myself as others see me and got me out of the negative rut I was in.</p>
+        <p class="lede reveal">The difference between week 1 and week 8 is day and night. Hannah has helped me see myself as others see me and got me out of the negative rut I was in.</p>
 
         <div class="quote-grid">
-          <blockquote class="quote">
-            It has helped me massively being able to talk to Hannah, and not feeling judged or feeling like I'm on my own.
+          <blockquote class="quote reveal">
+            It has helped me massively being able to talk to Hannah, and not feeling judged or feeling like I&rsquo;m on my own.
           </blockquote>
-          <blockquote class="quote">
+          <blockquote class="quote reveal">
             Hannah is wonderful. It was really nice to have someone to talk things through with and who listened without judgement.
           </blockquote>
-          <blockquote class="quote">
+          <blockquote class="quote reveal">
             Hannah is the best counsellor I have been to. I have opened up more to her than I have to anyone else.
           </blockquote>
-          <blockquote class="quote">
-            Counselling with Hannah has given me the space to open up and truly understand what I've been through and what's happening in my mind.
+          <blockquote class="quote reveal">
+            Counselling with Hannah has given me the space to open up and truly understand what I&rsquo;ve been through and what&rsquo;s happening in my mind.
           </blockquote>
         </div>
 
-        <details class="more-stories">
+        <details class="more-stories reveal">
           <summary>Read more stories</summary>
           <div class="quote-grid">
             <blockquote class="quote">
-              Hannah has helped me understand myself better and realise that I am entitled to feel sad about the bad things that have happened to me, even though I'm in a good place now. Thank you Hannah for the laughs and helping me see that I'm good enough just as I am.
+              Hannah has helped me understand myself better and realise that I am entitled to feel sad about the bad things that have happened to me, even though I&rsquo;m in a good place now. Thank you Hannah for the laughs and helping me see that I&rsquo;m good enough just as I am.
             </blockquote>
             <blockquote class="quote">
               I found counselling to be really good. It has helped me sort my thoughts out and made me realise things through being able to talk weekly with Hannah.
             </blockquote>
             <blockquote class="quote">
-              I didn't really know what to expect going into this, but it has been really beneficial and helpful. Hannah has been amazing and made me comfortable throughout it all.
+              I didn&rsquo;t really know what to expect going into this, but it has been really beneficial and helpful. Hannah has been amazing and made me comfortable throughout it all.
             </blockquote>
             <blockquote class="quote">
               Hannah made me feel very comfortable and at ease. I have found the sessions with Hannah very beneficial.
@@ -196,25 +298,25 @@
               Thank you Hannah for your listening and compassionate approach to my day-to-day problems and issues. The outlet has probably saved my marriage. The stress and pressure put on all family members by having autism in the family cannot be understated.
             </blockquote>
             <blockquote class="quote">
-              My time at counselling has been very beneficial. It's helped me through some really hard times, and having someone to talk to and support me has helped so much.
+              My time at counselling has been very beneficial. It&rsquo;s helped me through some really hard times, and having someone to talk to and support me has helped so much.
             </blockquote>
             <blockquote class="quote">
-              Hannah has helped me so much. I wouldn't be where I am now without all the help she's given me.
+              Hannah has helped me so much. I wouldn&rsquo;t be where I am now without all the help she&rsquo;s given me.
             </blockquote>
             <blockquote class="quote">
-              It's been such a fulfilling journey. As a mum to a child with a rare genetic condition, I function day to day at such a high rate of pressure and stress. Having the safe environment has helped me open up &mdash; and continue to be the best version of myself for my daughter, my family, and for me. The service has been a lifeline.
+              It&rsquo;s been such a fulfilling journey. As a mum to a child with a rare genetic condition, I function day to day at such a high rate of pressure and stress. Having the safe environment has helped me open up &mdash; and continue to be the best version of myself for my daughter, my family, and for me. The service has been a lifeline.
             </blockquote>
             <blockquote class="quote">
               I found talking through my issues and finding ways to navigate my emotions extremely helpful. Hannah is always welcoming, considerate, and compassionate.
             </blockquote>
             <blockquote class="quote">
-              I'm grateful for the support and the opportunity to have space for me and to be able to talk.
+              I&rsquo;m grateful for the support and the opportunity to have space for me and to be able to talk.
             </blockquote>
             <blockquote class="quote">
-              These sessions have been vital to my wellbeing. When I became a parent, especially with our son having additional needs, I forgot who I was &mdash; and these sessions have helped me make space for me. I had pushed friends and family away, but I have now got in touch with people I hadn't spoken to in years. I'm starting to let people in again.
+              These sessions have been vital to my wellbeing. When I became a parent, especially with our son having additional needs, I forgot who I was &mdash; and these sessions have helped me make space for me. I had pushed friends and family away, but I have now got in touch with people I hadn&rsquo;t spoken to in years. I&rsquo;m starting to let people in again.
             </blockquote>
             <blockquote class="quote">
-              Honestly, I don't think I would have made it through the past eight months without having Hannah to talk to. I had been bottling up emotions since I was about twelve. Now I'm able to feel sadness, but also love, happiness, and empathy &mdash; emotions I hadn't truly experienced in a long time.
+              Honestly, I don&rsquo;t think I would have made it through the past eight months without having Hannah to talk to. I had been bottling up emotions since I was about twelve. Now I&rsquo;m able to feel sadness, but also love, happiness, and empathy &mdash; emotions I hadn&rsquo;t truly experienced in a long time.
             </blockquote>
             <blockquote class="quote">
               Hannah has been patient, kind, understanding, and consistent.
@@ -225,12 +327,15 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="mark" aria-hidden="true"><svg><use href="#heart-mark"/></svg></div>
       <div class="container">
-        <h2>Getting in touch</h2>
-        <p class="intro">If you'd like to chat, drop me an email and I'll get back to you within a couple of working days. There's no commitment &mdash; we can have a phone call first to see if it feels like a fit.</p>
-        <p><a href="mailto:[your-email@example.com]" class="email-link">[your-email@example.com]</a></p>
-        <p class="meta">Working with adults in [Your area].</p>
+        <div class="kicker reveal">
+          <svg aria-hidden="true"><use href="#heart-mark"/></svg>
+          <span><em>08</em> &mdash; Getting in touch</span>
+        </div>
+        <h2 class="reveal">When you&rsquo;re ready.</h2>
+        <p class="intro reveal">Drop me an email and I&rsquo;ll get back to you within a couple of working days. There&rsquo;s no commitment &mdash; we can have a phone call first to see if it feels like a fit.</p>
+        <p class="reveal"><a href="mailto:crossyourhartcounselling@gmail.com" class="email-link">crossyourhartcounselling@gmail.com</a></p>
+        <p class="meta reveal">Working with adults in Resolven, and online across the UK.</p>
       </div>
     </section>
 
@@ -238,7 +343,10 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>Hannah Hart &middot; BACP-registered counsellor</p>
+      <a class="bacp-badge-link" href="https://www.bacp.co.uk/search/Therapists?query=00980803" target="_blank" rel="noopener" aria-label="BACP Registered Member — view BACP register">
+        <img src="bacp-logo.png" alt="BACP Registered Member" class="bacp-badge" onerror="this.parentElement.remove()" />
+      </a>
+      <p>Hannah Hart &middot; BACP-registered counsellor &middot; <a class="bacp-link" href="https://www.bacp.co.uk/search/Therapists?query=00980803" target="_blank" rel="noopener">MBACP 00980803</a></p>
       <p>All sessions are confidential.</p>
       <p>&copy; <span id="year">2026</span> Cross Your Hart Counselling</p>
     </div>
@@ -246,6 +354,49 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('primary-nav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', String(open));
+        nav.setAttribute('data-open', String(open));
+      }
+      toggle.addEventListener('click', function () {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') setOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+    })();
+
+    (function () {
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var els = document.querySelectorAll('.reveal');
+      if (prefersReduced || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+      els.forEach(function (el, i) {
+        el.style.transitionDelay = Math.min(i % 6, 5) * 60 + 'ms';
+        io.observe(el);
+      });
+    })();
   </script>
 
 </body>
