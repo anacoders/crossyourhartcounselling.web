@@ -488,9 +488,8 @@ a:hover {
     gap: 44px;
   }
   .hero-portrait {
-    justify-self: center;
+    justify-self: start;
     max-width: 280px;
-    order: -1;
   }
   .hero-text { max-width: none; }
   .hero p.intro { max-width: 50ch; }
