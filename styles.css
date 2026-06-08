@@ -921,9 +921,12 @@ footer.site-footer .bacp-link:hover {
 
 .bacp-badge {
   display: block;
-  max-width: 92px;
+  max-width: 200px;
   width: 100%;
   height: auto;
+  background: #fff;
+  border: 1px solid var(--rule-soft);
+  border-radius: 6px;
 }
 
 ::selection {
