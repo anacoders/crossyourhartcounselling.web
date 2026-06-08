@@ -477,7 +477,7 @@ a:hover {
   object-fit: cover;
   object-position: center 18%;
   border-radius: 4px;
-  filter: saturate(0.96) contrast(1.02);
+  filter: saturate(1.05) contrast(1.02);
   box-shadow: var(--shadow-portrait);
   z-index: 1;
 }
