@@ -1,32 +1,40 @@
 # Cross Your Hart Counselling
 
-Static website for the counselling practice. Hosted on GitHub Pages.
+Static website for the counselling practice. Built as plain HTML, CSS, and
+a little vanilla JavaScript with no build step. Hosted on GitHub Pages and
+served at **https://crossyourhartcounselling.co.uk**.
+
+For contributor conventions (voice, accessibility rules, image tooling),
+see `CLAUDE.md`.
 
 ## Files
 
-- `index.html` — the whole site (single page)
-- `styles.css` — brand styles
-- `favicon.svg` — browser tab icon
-- `logo-horizontal.png` — header logo
-- `logo-stacked.png` — social share image
-- `.nojekyll` — tells GitHub Pages to serve files as-is
+- `index.html`: the whole site (a single page of anchor-linked sections)
+- `styles.css`: all styling; design tokens live in the `:root` block
+- `favicon.svg`: browser tab icon
+- `logo-horizontal.png`: header logo
+- `og-image.jpg`: 1200x630 image shown when the site is shared on social media
+- `bacp-logo.png`: BACP registered-member badge (footer)
+- `hannah.jpg`: portrait used in the hero
+- `CNAME`: the custom domain, used by GitHub Pages
+- `.nojekyll`: tells GitHub Pages to serve files as-is
 
-## Before going live
+## Editing the site
 
-Open `index.html` and find-and-replace the two placeholders:
+All page text lives in `index.html`. Open it in any text editor, change
+the words between the tags, then save, commit, and push to `main`. No
+build step is required and the live site updates within about a minute.
 
-- `[your-email@example.com]` → the contact email
-- `[Your area]` → e.g. "Glasgow & online across the UK"
+To preview locally before pushing:
 
-Then commit and push to `main`.
+```sh
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-## Publishing on GitHub Pages
+## Hosting
 
-1. Push this repo to GitHub.
-2. In the repo on GitHub: **Settings → Pages**.
-3. Under **Build and deployment**, set Source to **Deploy from a branch**, branch **`main`**, folder **`/ (root)`**, then **Save**.
-4. After ~1 minute the site will be live at `https://<your-username>.github.io/crossyourhartcounselling.web/`.
-
-## Editing copy later
-
-All page text lives in `index.html`. Open it in any text editor and change the words between the tags — no build step required. Save, commit, push, and the live site updates within a minute.
+The site is published from the `main` branch (root folder) under
+**Settings -> Pages**, with the custom domain `crossyourhartcounselling.co.uk`
+(set by the `CNAME` file) and HTTPS enforced. Any push to `main` redeploys
+automatically.
