@@ -358,11 +358,10 @@ a:hover {
 .hero::before {
   content: "";
   position: absolute;
-  inset: -40px -10% auto -10%;
-  height: 78%;
+  inset: -40px -10% -40px -10%;
   background:
-    radial-gradient(55% 70% at 28% 40%, var(--sage-wash), transparent 72%),
-    radial-gradient(40% 60% at 78% 80%, rgba(201, 161, 147, 0.10), transparent 75%);
+    radial-gradient(55% 55% at 28% 34%, var(--sage-wash), transparent 72%),
+    radial-gradient(40% 45% at 78% 68%, rgba(201, 161, 147, 0.10), transparent 75%);
   pointer-events: none;
   z-index: 0;
 }
