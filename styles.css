@@ -5,7 +5,7 @@
   --bg-deep: #ebe2d0;
   --text: #2f3a32;
   --text-soft: #5e6b5f;
-  --text-mute: #8a8b7e;
+  --text-mute: #696b5e;
   --sage: #8ea58a;
   --sage-deep: #6d8569;
   --sage-faint: rgba(142, 165, 138, 0.10);
@@ -94,10 +94,15 @@ header.site-header {
   transition: color 180ms ease;
 }
 
-.nav-toggle:hover,
+.nav-toggle:hover {
+  color: var(--sage-deep);
+}
+
 .nav-toggle:focus-visible {
   color: var(--sage-deep);
-  outline: none;
+  outline: 2px solid var(--sage-deep);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 .nav-toggle .hamburger {
@@ -347,6 +352,17 @@ a {
 a:hover {
   color: var(--rose-deep);
   border-bottom-color: var(--rose);
+}
+
+/* ============ Focus visibility ============ */
+a:focus-visible,
+.logo-link:focus-visible,
+.hero .cta:focus-visible,
+.email-link:focus-visible,
+summary:focus-visible,
+.bacp-badge-link:focus-visible {
+  outline: 2px solid var(--sage-deep);
+  outline-offset: 3px;
 }
 
 /* ============ Hero ============ */
